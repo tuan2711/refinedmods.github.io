@@ -1,0 +1,1065 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="/dist/refined-storage.css">
+    <script src="/dist/refined-storage.js"></script>
+
+    <title>Refined Storage - Refined Mods</title>
+</head>
+<body data-project="refined-storage">
+
+<nav class="navbar navbar-expand-md navbar-dark bg-dark main-nav d-none d-lg-block d-xl-block">
+    <div class="container">
+        <ul class="navbar-nav">
+            
+                <li class="nav-item">
+                    <a class="pl-0 nav-link active"
+                       href="/refined-storage">Refined Storage</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class=" nav-link "
+                       href="/refined-storage-addons">Refined Storage Addons</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class=" nav-link "
+                       href="/ranged-pumps">Ranged Pumps</a>
+                </li>
+            
+                <li class="nav-item">
+                    <a class=" nav-link "
+                       href="/refined-pipes">Refined Pipes</a>
+                </li>
+            
+        </ul>
+
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="https://ci.refinedmods.com/">
+                    <i class="fas fa-cube"></i> Dev builds
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://repo.refinedmods.com/">
+                    <i class="fas fa-archive"></i> Maven
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://twitter.com/refinedmods">
+                    <i class="fab fa-twitter"></i> Twitter
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://github.com/refinedmods">
+                    <i class="fab fa-github"></i> GitHub
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://discordapp.com/invite/VYzsydb"><i class="fab fa-discord"></i>
+                    Discord</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="https://www.patreon.com/raoulvdberge"><i class="fab fa-patreon"></i>
+                    Patreon</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+        <div class="d-flex">
+        <div class="logo mr-3 mt-2 mb-2">
+            
+            <a class="navbar-brand" href="/refined-storage">
+                &nbsp;
+            </a>
+            
+        </div>
+        
+        </div>
+
+        <button class="navbar-toggler d-block d-lg-none d-xl-none" type="button" data-toggle="collapse"
+                data-target="#main-nav"
+                aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="main-nav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="/refined-storage">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link " href="/refined-storage/wiki">Wiki</a>
+                </li>
+                
+                    <li class="nav-item">
+                        <a class="nav-link " href="/refined-storage/releases">Releases</a>
+                    </li>
+                
+
+                <div class="d-block d-lg-none d-xl-none">
+                    
+                        <li class="nav-item">
+                            <a class="pl-0 nav-link active"
+                               href="/refined-storage"><i class="fas fa-external-link-alt"></i> Refined Storage</a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class=" nav-link "
+                               href="/refined-storage-addons"><i class="fas fa-external-link-alt"></i> Refined Storage Addons</a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class=" nav-link "
+                               href="/ranged-pumps"><i class="fas fa-external-link-alt"></i> Ranged Pumps</a>
+                        </li>
+                    
+                        <li class="nav-item">
+                            <a class=" nav-link "
+                               href="/refined-pipes"><i class="fas fa-external-link-alt"></i> Refined Pipes</a>
+                        </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://ci.refinedmods.com/">
+                            <i class="fas fa-cube"></i> Dev builds
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://repo.refinedmods.com/">
+                            <i class="fas fa-archive"></i> Maven
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://twitter.com/refinedmods">
+                            <i class="fab fa-twitter"></i> Twitter
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://github.com/refinedmods">
+                            <i class="fab fa-github"></i> GitHub
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://discordapp.com/invite/VYzsydb"><i class="fab fa-discord"></i>
+                            Discord</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.patreon.com/raoulvdberge"><i class="fab fa-patreon"></i>
+                            Patreon</a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<main role="main" class="pb-4">
+    
+    <div class="jumbotron bg-light pt-4 pb-5">
+        <div class="container">
+            <p class="lead">Refined Storage is a mass storage mod for Minecraft that offers the player a
+                network-based storage system, allowing them to store items and fluids on a massively expandable
+                device network.</p>
+
+            <hr class="my-4">
+
+            <p>Items and fluids can be stored in one of the many storage capabilities that the mod offers. Any
+                storage devices connected to the same network are accessible to the player through one simple Grid
+                interface, allowing the player to access the inventories of many devices through a single unified
+                GUI.</p>
+            <p>This mod not only adds storage solutions, but also devices that can be used to manipulate items and
+                blocks in the world and from within the system, such as importers, exporters, constructors,
+                destructors, and more! There are also devices in this mod that allow the player to setup
+                auto-crafting, allowing the crafting of complex recipes in a few simple clicks.</p>
+
+            <a class="btn btn-primary btn-lg" href="/refined-storage/wiki/getting-started.html" role="button">Get started</a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div id="accordion" class="mb-4">
+                    <div class="card">
+                        <div class="card-header" id="blocks-name">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#blocks"
+                                        aria-expanded="true" aria-controls="blocks">
+                                    Blocks
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="blocks" class="collapse show" aria-labelledby="blocks-name"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <a href="/refined-storage/wiki/controller.html">
+                                            <img src="/assets/refined-storage/renders/controller.png"
+                                                 alt="Controller"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Controller"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/grid.html">
+                                            <img src="/assets/refined-storage/renders/grid.png"
+                                                 alt="Grid"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Grid"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/crafting-grid.html">
+                                            <img src="/assets/refined-storage/renders/crafting-grid.png"
+                                                 alt="Crafting Grid"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Crafting Grid"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/pattern-grid.html">
+                                            <img src="/assets/refined-storage/renders/pattern-grid.png"
+                                                 alt="Pattern Grid"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Pattern Grid"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/fluid-grid.html">
+                                            <img src="/assets/refined-storage/renders/fluid-grid.png"
+                                                 alt="Fluid Grid"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Fluid Grid"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/crafting-monitor.html">
+                                            <img src="/assets/refined-storage/renders/crafting-monitor.png"
+                                                 alt="Crafting Monitor"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Crafting Monitor"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/portable-grid.html">
+                                            <img src="/assets/refined-storage/renders/portable-grid.png"
+                                                 alt="Portable Grid"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Portable Grid"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/storage-monitor.html">
+                                            <img src="/assets/refined-storage/renders/storage-monitor.png"
+                                                 alt="Storage Monitor"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Storage Monitor"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/crafter-manager.html">
+                                            <img src="/assets/refined-storage/renders/crafter-manager.png"
+                                                 alt="Crafter Manager"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Crafter Manager"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/crafter.html">
+                                            <img src="/assets/refined-storage/renders/crafter.png"
+                                                 alt="Crafter"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Crafter"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/processing-pattern-encoder.html">
+                                            <img src="/assets/refined-storage/renders/processing-pattern-encoder.png"
+                                                 alt="Processing Pattern Encoder"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Processing Pattern Encoder"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/disk-drive.html">
+                                            <img src="/assets/refined-storage/renders/disk-drive.png"
+                                                 alt="Disk Drive"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Disk Drive"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/1k-storage-block.html">
+                                            <img src="/assets/refined-storage/renders/1k-storage-block.png"
+                                                 alt="1k Storage Block"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="1k Storage Block"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/4k-storage-block.html">
+                                            <img src="/assets/refined-storage/renders/4k-storage-block.png"
+                                                 alt="4k Storage Block"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="4k Storage Block"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/16k-storage-block.html">
+                                            <img src="/assets/refined-storage/renders/16k-storage-block.png"
+                                                 alt="16k Storage Block"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="16k Storage Block"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/64k-storage-block.html">
+                                            <img src="/assets/refined-storage/renders/64k-storage-block.png"
+                                                 alt="64k Storage Block"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="64k Storage Block"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/creative-storage-block.html">
+                                            <img src="/assets/refined-storage/renders/creative-storage-block.png"
+                                                 alt="Creative Storage Block"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Creative Storage Block"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/64k-fluid-storage-block.html">
+                                            <img src="/assets/refined-storage/renders/64k-fluid-storage-block.png"
+                                                 alt="64k Fluid Storage Block"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="64k Fluid Storage Block"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/256k-fluid-storage-block.html">
+                                            <img src="/assets/refined-storage/renders/256k-fluid-storage-block.png"
+                                                 alt="256k Fluid Storage Block"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="256k Fluid Storage Block"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/1024k-fluid-storage-block.html">
+                                            <img src="/assets/refined-storage/renders/1024k-fluid-storage-block.png"
+                                                 alt="1024k Fluid Storage Block"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="1024k Fluid Storage Block"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/4096k-fluid-storage-block.html">
+                                            <img src="/assets/refined-storage/renders/4096k-fluid-storage-block.png"
+                                                 alt="4096k Fluid Storage Block"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="4096k Fluid Storage Block"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/creative-fluid-storage-block.html">
+                                            <img src="/assets/refined-storage/renders/creative-fluid-storage-block.png"
+                                                 alt="Creative Fluid Storage Block"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Creative Fluid Storage Block"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/solderer.html">
+                                            <img src="/assets/refined-storage/renders/solderer.png"
+                                                 alt="Solderer"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Solderer"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/cable.html">
+                                            <img src="/assets/refined-storage/renders/cable.png"
+                                                 alt="Cable"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Cable"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/importer.html">
+                                            <img src="/assets/refined-storage/renders/importer.png"
+                                                 alt="Importer"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Importer"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/exporter.html">
+                                            <img src="/assets/refined-storage/renders/exporter.png"
+                                                 alt="Exporter"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Exporter"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/reader.html">
+                                            <img src="/assets/refined-storage/renders/reader.png"
+                                                 alt="Reader"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Reader"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/writer.html">
+                                            <img src="/assets/refined-storage/renders/writer.png"
+                                                 alt="Writer"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Writer"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/external-storage.html">
+                                            <img src="/assets/refined-storage/renders/external-storage.png"
+                                                 alt="External Storage"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="External Storage"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/constructor.html">
+                                            <img src="/assets/refined-storage/renders/constructor.png"
+                                                 alt="Constructor"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Constructor"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/destructor.html">
+                                            <img src="/assets/refined-storage/renders/destructor.png"
+                                                 alt="Destructor"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Destructor"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/detector.html">
+                                            <img src="/assets/refined-storage/renders/detector.png"
+                                                 alt="Detector"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Detector"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/relay.html">
+                                            <img src="/assets/refined-storage/renders/relay.png"
+                                                 alt="Relay"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Relay"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/interface.html">
+                                            <img src="/assets/refined-storage/renders/interface.png"
+                                                 alt="Interface"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Interface"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/fluid-interface.html">
+                                            <img src="/assets/refined-storage/renders/fluid-interface.png"
+                                                 alt="Fluid Interface"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Fluid Interface"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/wireless-transmitter.html">
+                                            <img src="/assets/refined-storage/renders/wireless-transmitter.png"
+                                                 alt="Wireless Transmitter"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Wireless Transmitter"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/machine-casing.html">
+                                            <img src="/assets/refined-storage/renders/machine-casing.png"
+                                                 alt="Machine Casing"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Machine Casing"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/block-of-quartz-enriched-iron.html">
+                                            <img src="/assets/refined-storage/renders/block-of-quartz-enriched-iron.png"
+                                                 alt="Block of Quartz Enriched Iron"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Block of Quartz Enriched Iron"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/network-transmitter.html">
+                                            <img src="/assets/refined-storage/renders/network-transmitter.png"
+                                                 alt="Network Transmitter"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Network Transmitter"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/network-receiver.html">
+                                            <img src="/assets/refined-storage/renders/network-receiver.png"
+                                                 alt="Network Receiver"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Network Receiver"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/security-manager.html">
+                                            <img src="/assets/refined-storage/renders/security-manager.png"
+                                                 alt="Security Manager"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Security Manager"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/disk-manipulator.html">
+                                            <img src="/assets/refined-storage/renders/disk-manipulator.png"
+                                                 alt="Disk Manipulator"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Disk Manipulator"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/cover.html">
+                                            <img src="/assets/refined-storage/renders/cover.png"
+                                                 alt="Cover"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Cover"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/hollow-cover.html">
+                                            <img src="/assets/refined-storage/renders/hollow-cover.png"
+                                                 alt="Hollow Cover"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Hollow Cover"
+                                            >
+                                        </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-header" id="items-name">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link" data-toggle="collapse" data-target="#items"
+                                        aria-expanded="true" aria-controls="items">
+                                    Items
+                                </button>
+                            </h5>
+                        </div>
+
+                        <div id="items" class="collapse" aria-labelledby="items-name"
+                             data-parent="#accordion">
+                            <div class="card-body">
+                                <a href="/refined-storage/wiki/quartz-enriched-iron.html">
+                                            <img src="/assets/refined-storage/renders/quartz-enriched-iron.png"
+                                                 alt="Quartz Enriched Iron"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Quartz Enriched Iron"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/1k-storage-disk.html">
+                                            <img src="/assets/refined-storage/renders/1k-storage-disk.png"
+                                                 alt="1k Storage Disk"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="1k Storage Disk"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/4k-storage-disk.html">
+                                            <img src="/assets/refined-storage/renders/4k-storage-disk.png"
+                                                 alt="4k Storage Disk"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="4k Storage Disk"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/16k-storage-disk.html">
+                                            <img src="/assets/refined-storage/renders/16k-storage-disk.png"
+                                                 alt="16k Storage Disk"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="16k Storage Disk"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/64k-storage-disk.html">
+                                            <img src="/assets/refined-storage/renders/64k-storage-disk.png"
+                                                 alt="64k Storage Disk"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="64k Storage Disk"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/creative-storage-disk.html">
+                                            <img src="/assets/refined-storage/renders/creative-storage-disk.png"
+                                                 alt="Creative Storage Disk"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Creative Storage Disk"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/64k-fluid-storage-disk.html">
+                                            <img src="/assets/refined-storage/renders/64k-fluid-storage-disk.png"
+                                                 alt="64k Fluid Storage Disk"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="64k Fluid Storage Disk"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/256k-fluid-storage-disk.html">
+                                            <img src="/assets/refined-storage/renders/256k-fluid-storage-disk.png"
+                                                 alt="256k Fluid Storage Disk"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="256k Fluid Storage Disk"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/1024k-fluid-storage-disk.html">
+                                            <img src="/assets/refined-storage/renders/1024k-fluid-storage-disk.png"
+                                                 alt="1024k Fluid Storage Disk"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="1024k Fluid Storage Disk"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/4096k-fluid-storage-disk.html">
+                                            <img src="/assets/refined-storage/renders/4096k-fluid-storage-disk.png"
+                                                 alt="4096k Fluid Storage Disk"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="4096k Fluid Storage Disk"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/creative-fluid-storage-disk.html">
+                                            <img src="/assets/refined-storage/renders/creative-fluid-storage-disk.png"
+                                                 alt="Creative Fluid Storage Disk"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Creative Fluid Storage Disk"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/storage-housing.html">
+                                            <img src="/assets/refined-storage/renders/storage-housing.png"
+                                                 alt="Storage Housing"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Storage Housing"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/pattern.html">
+                                            <img src="/assets/refined-storage/renders/pattern.png"
+                                                 alt="Pattern"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Pattern"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/1k-storage-part.html">
+                                            <img src="/assets/refined-storage/renders/1k-storage-part.png"
+                                                 alt="1k Storage Part"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="1k Storage Part"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/4k-storage-part.html">
+                                            <img src="/assets/refined-storage/renders/4k-storage-part.png"
+                                                 alt="4k Storage Part"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="4k Storage Part"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/16k-storage-part.html">
+                                            <img src="/assets/refined-storage/renders/16k-storage-part.png"
+                                                 alt="16k Storage Part"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="16k Storage Part"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/64k-storage-part.html">
+                                            <img src="/assets/refined-storage/renders/64k-storage-part.png"
+                                                 alt="64k Storage Part"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="64k Storage Part"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/64k-fluid-storage-part.html">
+                                            <img src="/assets/refined-storage/renders/64k-fluid-storage-part.png"
+                                                 alt="64k Fluid Storage Part"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="64k Fluid Storage Part"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/256k-fluid-storage-part.html">
+                                            <img src="/assets/refined-storage/renders/256k-fluid-storage-part.png"
+                                                 alt="256k Fluid Storage Part"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="256k Fluid Storage Part"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/1024k-fluid-storage-part.html">
+                                            <img src="/assets/refined-storage/renders/1024k-fluid-storage-part.png"
+                                                 alt="1024k Fluid Storage Part"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="1024k Fluid Storage Part"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/4096k-fluid-storage-part.html">
+                                            <img src="/assets/refined-storage/renders/4096k-fluid-storage-part.png"
+                                                 alt="4096k Fluid Storage Part"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="4096k Fluid Storage Part"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/wireless-grid.html">
+                                            <img src="/assets/refined-storage/renders/wireless-grid.png"
+                                                 alt="Wireless Grid"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Wireless Grid"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/wireless-fluid-grid.html">
+                                            <img src="/assets/refined-storage/renders/wireless-fluid-grid.png"
+                                                 alt="Wireless Fluid Grid"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Wireless Fluid Grid"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/wireless-crafting-monitor.html">
+                                            <img src="/assets/refined-storage/renders/wireless-crafting-monitor.png"
+                                                 alt="Wireless Crafting Monitor"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Wireless Crafting Monitor"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/portable-grid.html">
+                                            <img src="/assets/refined-storage/renders/portable-grid.png"
+                                                 alt="Portable Grid"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Portable Grid"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/raw-basic-processor.html">
+                                            <img src="/assets/refined-storage/renders/raw-basic-processor.png"
+                                                 alt="Raw Basic Processor"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Raw Basic Processor"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/raw-improved-processor.html">
+                                            <img src="/assets/refined-storage/renders/raw-improved-processor.png"
+                                                 alt="Raw Improved Processor"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Raw Improved Processor"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/raw-advanced-processor.html">
+                                            <img src="/assets/refined-storage/renders/raw-advanced-processor.png"
+                                                 alt="Raw Advanced Processor"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Raw Advanced Processor"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/basic-processor.html">
+                                            <img src="/assets/refined-storage/renders/basic-processor.png"
+                                                 alt="Basic Processor"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Basic Processor"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/improved-processor.html">
+                                            <img src="/assets/refined-storage/renders/improved-processor.png"
+                                                 alt="Improved Processor"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Improved Processor"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/advanced-processor.html">
+                                            <img src="/assets/refined-storage/renders/advanced-processor.png"
+                                                 alt="Advanced Processor"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Advanced Processor"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/construction-core.html">
+                                            <img src="/assets/refined-storage/renders/construction-core.png"
+                                                 alt="Construction Core"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Construction Core"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/destruction-core.html">
+                                            <img src="/assets/refined-storage/renders/destruction-core.png"
+                                                 alt="Destruction Core"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Destruction Core"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/silicon.html">
+                                            <img src="/assets/refined-storage/renders/silicon.png"
+                                                 alt="Silicon"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Silicon"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/upgrade.html">
+                                            <img src="/assets/refined-storage/renders/upgrade.png"
+                                                 alt="Upgrade"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Upgrade"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/range-upgrade.html">
+                                            <img src="/assets/refined-storage/renders/range-upgrade.png"
+                                                 alt="Range Upgrade"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Range Upgrade"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/speed-upgrade.html">
+                                            <img src="/assets/refined-storage/renders/speed-upgrade.png"
+                                                 alt="Speed Upgrade"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Speed Upgrade"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/regulator-upgrade.html">
+                                            <img src="/assets/refined-storage/renders/regulator-upgrade.png"
+                                                 alt="Regulator Upgrade"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Regulator Upgrade"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/crafting-upgrade.html">
+                                            <img src="/assets/refined-storage/renders/crafting-upgrade.png"
+                                                 alt="Crafting Upgrade"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Crafting Upgrade"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/stack-upgrade.html">
+                                            <img src="/assets/refined-storage/renders/stack-upgrade.png"
+                                                 alt="Stack Upgrade"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Stack Upgrade"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/interdimensional-upgrade.html">
+                                            <img src="/assets/refined-storage/renders/interdimensional-upgrade.png"
+                                                 alt="Interdimensional Upgrade"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Interdimensional Upgrade"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/silk-touch-upgrade.html">
+                                            <img src="/assets/refined-storage/renders/silk-touch-upgrade.png"
+                                                 alt="Silk Touch Upgrade"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Silk Touch Upgrade"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/fortune-upgrade.html">
+                                            <img src="/assets/refined-storage/renders/fortune-upgrade.png"
+                                                 alt="Fortune Upgrade"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Fortune Upgrade"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/filter.html">
+                                            <img src="/assets/refined-storage/renders/filter.png"
+                                                 alt="Filter"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Filter"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/network-card.html">
+                                            <img src="/assets/refined-storage/renders/network-card.png"
+                                                 alt="Network Card"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Network Card"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/security-card.html">
+                                            <img src="/assets/refined-storage/renders/security-card.png"
+                                                 alt="Security Card"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Security Card"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/processor-binding.html">
+                                            <img src="/assets/refined-storage/renders/processor-binding.png"
+                                                 alt="Processor Binding"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Processor Binding"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/cutting-tool.html">
+                                            <img src="/assets/refined-storage/renders/cutting-tool.png"
+                                                 alt="Cutting Tool"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Cutting Tool"
+                                            >
+                                        </a>
+                                <a href="/refined-storage/wiki/wrench.html">
+                                            <img src="/assets/refined-storage/renders/wrench.png"
+                                                 alt="Wrench"
+                                                 class="m-1 home-icon"
+                                                 data-tippy-content="Wrench"
+                                            >
+                                        </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                
+                    <div class="card mb-4">
+                        <div class="card-header">
+                            Latest stable release
+                        </div>
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Refined Storage 1.9.16</h5>
+                            <p class="card-text">Minecraft 1.16.5</p>
+                            <a href="/refined-storage/releases/1-9-16"
+                               class="btn btn-primary">Download</a>
+                        </div>
+                    </div>
+                
+
+                <div class="card">
+                    <div class="card-header">
+                        Latest releases
+                    </div>
+                    <div class="card-body p-0 m-0">
+                        <div class="list-group list-group-flush">
+                            
+                                
+                                    <a class="list-group-item list-group-item-action"
+                                       href="/refined-storage/releases/1-9-16">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>Minecraft 1.16.5</strong>
+
+                                            <div class="mt-sm">
+                                                <span class="fa fa-download mt-sm"></span>
+                                            </div>
+                                        </div>
+                                        <p class="mb-0">
+
+                                            Refined Storage 1.9.16</p>
+                                    </a>
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    <a class="list-group-item list-group-item-action"
+                                       href="/refined-storage/releases/1-8-8">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>Minecraft 1.15.2</strong>
+
+                                            <div class="mt-sm">
+                                                <span class="fa fa-download mt-sm"></span>
+                                            </div>
+                                        </div>
+                                        <p class="mb-0">
+
+                                            Refined Storage 1.8.8</p>
+                                    </a>
+                                
+                            
+                                
+                            
+                                
+                                    <a class="list-group-item list-group-item-action"
+                                       href="/refined-storage/releases/1-7-3">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>Minecraft 1.14.4</strong>
+
+                                            <div class="mt-sm">
+                                                <span class="fa fa-download mt-sm"></span>
+                                            </div>
+                                        </div>
+                                        <p class="mb-0">
+    <span class="badge bg-primary">Beta</span>
+
+
+                                            Refined Storage 1.7.3</p>
+                                    </a>
+                                
+                            
+                                
+                                    <a class="list-group-item list-group-item-action"
+                                       href="/refined-storage/releases/1-6-16">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>Minecraft 1.12.2</strong>
+
+                                            <div class="mt-sm">
+                                                <span class="fa fa-download mt-sm"></span>
+                                            </div>
+                                        </div>
+                                        <p class="mb-0">
+
+                                            Refined Storage 1.6.16</p>
+                                    </a>
+                                
+                            
+                                
+                            
+                                
+                            
+                                
+                                    <a class="list-group-item list-group-item-action"
+                                       href="/refined-storage/releases/1-4-20">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>Minecraft 1.11.2</strong>
+
+                                            <div class="mt-sm">
+                                                <span class="fa fa-download mt-sm"></span>
+                                            </div>
+                                        </div>
+                                        <p class="mb-0">
+
+                                            Refined Storage 1.4.20</p>
+                                    </a>
+                                
+                            
+                                
+                            
+                                
+                                    <a class="list-group-item list-group-item-action"
+                                       href="/refined-storage/releases/1-2-26">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>Minecraft 1.10.2</strong>
+
+                                            <div class="mt-sm">
+                                                <span class="fa fa-download mt-sm"></span>
+                                            </div>
+                                        </div>
+                                        <p class="mb-0">
+
+                                            Refined Storage 1.2.26</p>
+                                    </a>
+                                
+                            
+                                
+                                    <a class="list-group-item list-group-item-action"
+                                       href="/refined-storage/releases/0-7-19">
+                                        <div class="d-flex justify-content-between">
+                                            <strong>Minecraft 1.9.4</strong>
+
+                                            <div class="mt-sm">
+                                                <span class="fa fa-download mt-sm"></span>
+                                            </div>
+                                        </div>
+                                        <p class="mb-0">
+    <span class="badge bg-primary">Beta</span>
+
+
+                                            Refined Storage 0.7.19</p>
+                                    </a>
+                                
+                            
+                                
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="bg-light container d-flex flex-wrap justify-content-between pt-4 pb-2">
+    <p>&copy; Refined Mods 2021</p>
+    <div class="d-flex">
+        <p>Sponsored by</p>
+        <div class="creeperhost-logo">
+            <a href="https://www.creeperhost.net/partner/refinedstorage945">
+                &nbsp;
+            </a>
+        </div>
+    </div>
+</footer>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-169337902-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-169337902-1');
+</script>
+
+</body>
+</html>
