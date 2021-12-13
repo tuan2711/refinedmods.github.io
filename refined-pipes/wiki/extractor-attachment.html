@@ -18,7 +18,7 @@
         <ul class="navbar-nav">
             
                 <li class="nav-item">
-                    <a class="pl-0 nav-link "
+                    <a class="ps-0 nav-link "
                        href="/refined-storage">Refined Storage</a>
                 </li>
             
@@ -39,7 +39,7 @@
             
         </ul>
 
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ms-auto">
             <li class="nav-item">
                 <a class="nav-link" href="https://ci.refinedmods.com/">
                     <i class="fas fa-cube"></i> Dev builds
@@ -75,7 +75,7 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <div class="d-flex">
-        <div class="logo mr-3 mt-2 mb-2">
+        <div class="logo me-3 mt-2 mb-2">
             
             <a class="navbar-brand" href="/refined-pipes">
                 Refined Pipes
@@ -108,7 +108,7 @@
                 <div class="d-block d-lg-none d-xl-none">
                     
                         <li class="nav-item">
-                            <a class="pl-0 nav-link "
+                            <a class="ps-0 nav-link "
                                href="/refined-storage"><i class="fas fa-external-link-alt"></i> Refined Storage</a>
                         </li>
                     
@@ -205,22 +205,23 @@
             <div class="col-md-4">
                 <div class="card">
                     <div class="card-header">
-                        <ul class="nav nav-tabs card-header-tabs">
+                        <ul class="nav nav-tabs card-header-tabs" id="wiki-tabs" role="tablist">
                             
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" data-tab="Blocks" href="#">Blocks</a>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="Blocks-tab" data-website-tab-id="Blocks" data-bs-toggle="tab" data-bs-target="#Blocks-tab-content" type="button" role="tab" aria-controls="Blocks-tab-content">Blocks</button>
                                 </li>
                             
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" data-tab="Items" href="#">Items</a>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="Items-tab" data-website-tab-id="Items" data-bs-toggle="tab" data-bs-target="#Items-tab-content" type="button" role="tab" aria-controls="Items-tab-content">Items</button>
                                 </li>
                             
                         </ul>
                     </div>
                     <div class="card-body">
-                        
-                            <div class="sidebar" id="_sidebar_Blocks">
-                                <p><strong>Item pipes</strong></p>
+                        <div class="tab-content" id="wiki-tabs-content">
+                            
+                                <div class="tab-pane" id="Blocks-tab-content" aria-labelledby="Blocks-tab" role="tabpanel">
+                                    <p><strong>Item pipes</strong></p>
 
 <ul>
 <li><a href="/refined-pipes/wiki/basic-item-pipe.html" data-tooltip-icon="/assets/refined-pipes/renders/basic_item_pipe.png">Basic Item Pipe</a><br />
@@ -261,10 +262,10 @@
 </li>
 </ul>
 
-                            </div>
-                        
-                            <div class="sidebar" id="_sidebar_Items">
-                                <p><strong>Extractor attachments</strong></p>
+                                </div>
+                            
+                                <div class="tab-pane" id="Items-tab-content" aria-labelledby="Items-tab" role="tabpanel">
+                                    <p><strong>Extractor attachments</strong></p>
 
 <ul>
 <li><a href="/refined-pipes/wiki/basic-extractor-attachment.html" data-tooltip-icon="/assets/refined-pipes/renders/basic_extractor_attachment.png">Basic Extractor Attachment</a><br />
@@ -279,8 +280,9 @@
 </li>
 </ul>
 
-                            </div>
-                        
+                                </div>
+                            
+                        </div>
                     </div>
                 </div>
             </div>
