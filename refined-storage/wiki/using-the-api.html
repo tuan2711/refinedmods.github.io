@@ -11,7 +11,7 @@
         <script src="/dist/refined-storage.js"></script>
     
 
-    <title>Wireless Crafting Monitor - Refined Mods</title>
+    <title>Using the API - Refined Mods</title>
 </head>
 <body data-project="refined-storage">
 
@@ -171,13 +171,7 @@
         <div class="page-title">
             <h1 class="h2">
                 
-                    <img src="/assets/refined-storage/renders/wireless-crafting-monitor.png" alt="Wireless Crafting Monitor" class="wiki-icon">
-                
-                Wireless Crafting Monitor
-                
-                    
-                        <a style="font-size: 15px" href="/refined-storage/releases/1-2-1" class="badge bg-primary">Since: 1.2.1</a>
-                    
+                Using the API
                 
             </h1>
         </div>
@@ -186,7 +180,7 @@
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"><a href="/refined-storage">Refined Storage</a></li>
                 <li class="breadcrumb-item"><a href="/refined-storage/wiki">Wiki</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Wireless Crafting Monitor</li>
+                <li class="breadcrumb-item active" aria-current="page">Using the API</li>
             </ol>
         </nav>
 
@@ -402,7 +396,7 @@
                                             </li>
                                         
                                             <li class="nav-item">
-                                                <a class="nav-link "  href="/refined-storage/wiki/using-the-api.html">
+                                                <a class="nav-link active" aria-current="page" href="/refined-storage/wiki/using-the-api.html">
                                                     
                                                     Using the API
                                                 </a>
@@ -1101,7 +1095,7 @@
                                             </li>
                                         
                                             <li class="nav-item">
-                                                <a class="nav-link active" aria-current="page" href="/refined-storage/wiki/wireless-crafting-monitor.html">
+                                                <a class="nav-link "  href="/refined-storage/wiki/wireless-crafting-monitor.html">
                                                     
                                                         <img src="/assets/refined-storage/renders/wireless-crafting-monitor.png" alt="Wireless Crafting Monitor" class="wiki-sidebar-icon">
                                                     
@@ -1397,61 +1391,89 @@
             </div>
             <div class="col-md-8">
                 <article>
-                    <p>With the Wireless Crafting Monitor the player can see what is crafting from anywhere.</p>
+                    <h2 class="h4" id="adding-the-dependency">Adding the dependency</h2>
 
-<p>To activate the Wireless Crafting Monitor, the player has to right click the Wireless Crafting Monitor on a <a href="/refined-storage/wiki/controller.html" data-tooltip-icon="/assets/refined-storage/renders/controller.png">Controller</a>. If you&rsquo;re playing on Refined Storage 1.7.x or higher you can bind the Wireless Crafting Monitor by right clicking on any connected network device.</p>
+<h3 class="h5" id="for-minecraft-1-18-or-later">For Minecraft 1.18 or later</h3>
 
-<p>To use the Wireless Crafting Monitor the item needs Forge Energy. You&rsquo;ll have to charge it in a block that charges items from another mod.</p>
+<p>Starting from Minecraft 1.18, Refined Storage will no longer publish Maven packages on our own Maven repository.</p>
 
-<p>After doing all these steps, the Wireless Crafting Monitor is still missing a signal from the system. Add at least 1 <a href="/refined-storage/wiki/wireless-transmitter.html" data-tooltip-icon="/assets/refined-storage/renders/wireless-transmitter.png">Wireless Transmitter</a> to the network to get a basic range of 16 blocks.</p>
+<p>We will be moving to GitHub packages.</p>
 
-<p>If the Wireless Crafting Monitor is ready for use, it will light up blue.</p>
+<p>Add following repository to your <code>build.gradle</code>:</p>
 
-<p>Sometimes, the Wireless Crafting Monitor doesn&rsquo;t open or stays grey. To enable it make sure that:</p>
+<pre><code>repositories {
+    maven {
+        url = uri(&quot;https://maven.pkg.github.com/refinedmods/refinedstorage&quot;)
+        credentials {
+            username = &quot;anything&quot;
+            password = &quot;\u0067hp_pnP5hVDYXXhhXwe21IEkrUzGjquUJL0xjLzb&quot;
+        }
+    }
+}
+</code></pre>
+
+<p>The credentials are necessary because as of december 2021, GitHub packages still requires authentication for public packages.<br />
+The password used is a personal access token that has read access to the Refined Mods repositories.<br />
+It can be reused in other projects.</p>
+
+<p>See:</p>
 
 <ul>
-<li>The Wireless Crafting Monitor is bound to a <a href="/refined-storage/wiki/controller.html" data-tooltip-icon="/assets/refined-storage/renders/controller.png">Controller</a><br />
+<li><a href="https://github.community/t/download-from-github-package-registry-without-authentication/14407/38">https://github.community/t/download-from-github-package-registry-without-authentication/14407/38</a><br />
 </li>
-<li>There is at least 1 <a href="/refined-storage/wiki/wireless-transmitter.html" data-tooltip-icon="/assets/refined-storage/renders/wireless-transmitter.png">Wireless Transmitter</a> connected to the network<br />
-</li>
-<li>That you are in range of the <a href="/refined-storage/wiki/wireless-transmitter.html" data-tooltip-icon="/assets/refined-storage/renders/wireless-transmitter.png">Wireless Transmitter</a><br />
-</li>
-<li>The <a href="/refined-storage/wiki/controller.html" data-tooltip-icon="/assets/refined-storage/renders/controller.png">Controller</a> block is still in the world on the place where you bound it to<br />
+<li><a href="https://github.community/t/download-from-github-package-registry-without-authentication/14407/44">https://github.community/t/download-from-github-package-registry-without-authentication/14407/44</a><br />
 </li>
 </ul>
 
-<h2 class="h4" id="energy-behavior">Energy behavior</h2>
+<p>Then use following dependency:</p>
 
-<p>The Wireless Crafting Monitor draws energy on following actions:</p>
+<pre><code>implementation fg.deobf(&quot;com.refinedmods:refinedstorage:VERSION_HERE&quot;) {
+    transitive false
+}
+</code></pre>
 
-<table class="table">
-<thead>
-<tr>
-<th>Action</th>
-<th>Amount of Forge Energy drawed</th>
-</tr>
-</thead>
+<p>You can find a list of versions on <a href="https://github.com/orgs/refinedmods/packages">GitHub packages</a>.</p>
 
-<tbody>
-<tr>
-<td>Opening the Wireless Crafting Monitor</td>
-<td>35 FE</td>
-</tr>
+<h3 class="h5" id="for-minecraft-1-15-or-later">For Minecraft 1.15 or later</h3>
 
-<tr>
-<td>Cancelling a task</td>
-<td>4 FE</td>
-</tr>
+<p>Add following repository to your <code>build.gradle</code>:</p>
 
-<tr>
-<td>Cancelling all tasks</td>
-<td>5 FE</td>
-</tr>
-</tbody>
-</table>
+<pre><code>repositories {
+    maven {
+        url &quot;https://repo.refinedmods.com&quot;
+    }
+}
+</code></pre>
+
+<p>Then use following dependency:</p>
+
+<pre><code>compileOnly fg.deobf(&quot;com.refinedmods:refinedstorage:VERSION_HERE&quot;)
+runtimeOnly fg.deobf(&quot;com.refinedmods:refinedstorage:VERSION_HERE&quot;)
+</code></pre>
+
+<p>You can find a list of versions on <a href="https://repo.refinedmods.com/com/refinedmods/">our Maven repository</a>.</p>
+
+<p>Warning: the Maven repository is being phased out and will be removed at some point.<br />
+When that happens, you&rsquo;ll have to build Refined Storage from source and include the jar manually.</p>
+
+<h3 class="h5" id="for-older-minecraft-versions">For older Minecraft versions</h3>
+
+<p>Due to disk space issues on our repository we have removed these old versions.</p>
+
+<p>You&rsquo;ll have to build Refined Storage from source and include the jar manually.</p>
+
+<h2 class="h4" id="using-the-api">Using the API</h2>
+
+<p>Use the <code>@RSAPIInject</code> annotation to get access to the API facade.</p>
+
+<pre><code>public class MyMod {
+    @RSAPIInject
+    public static IRSAPI RSAPI;
+}
+</code></pre>
 
                 </article>
-                <a href="https://github.com/refinedmods/refinedmods.github.io/edit/main/refined-storage/wiki/Wireless%20Crafting%20Monitor.md" class="btn btn-light">
+                <a href="https://github.com/refinedmods/refinedmods.github.io/edit/main/refined-storage/wiki/Using%20the%20API.md" class="btn btn-light">
                     <i class="fas fa-pencil-alt"></i> Edit 
                 </a>
             </div>
