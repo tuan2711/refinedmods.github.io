@@ -235,13 +235,6 @@
                                             </li>
                                         
                                             <li class="nav-item">
-                                                <a class="nav-link "  href="/refined-storage/wiki/readers-and-writers.html">
-                                                    
-                                                    Readers and Writers
-                                                </a>
-                                            </li>
-                                        
-                                            <li class="nav-item">
                                                 <a class="nav-link "  href="/refined-storage/wiki/networks-over-long-distances.html">
                                                     
                                                     Networks over long distances
@@ -1364,13 +1357,18 @@
             </div>
             <div class="col-md-8">
                 <article>
-                    <h2 class="h4" id="adding-the-dependency">Adding the dependency</h2>
+                    <h2 class="h4" id="for-minecraft-1-18-2-or-later">For Minecraft 1.18.2 or later</h2>
 
-<h3 class="h5" id="for-minecraft-1-18-or-later">For Minecraft 1.18 or later</h3>
+<p>Starting from Minecraft 1.18, you can include the Refined Storage API in your development environment from 2 sources:</p>
 
-<p>Starting from Minecraft 1.18, Refined Storage will no longer publish Maven packages on our own Maven repository.</p>
+<ul>
+<li>GitHub Packages<br />
+</li>
+<li>CreeperHost Maven<br />
+</li>
+</ul>
 
-<p>We will be moving to GitHub packages.</p>
+<h3 class="h5" id="github-packages">GitHub packages</h3>
 
 <p>Add following repository to your <code>build.gradle</code>:</p>
 
@@ -1398,42 +1396,37 @@ It can be reused in other projects.</p>
 </li>
 </ul>
 
-<p>Then use following dependency:</p>
-
-<pre><code>implementation fg.deobf(&quot;com.refinedmods:refinedstorage:VERSION_HERE&quot;) {
-    transitive false
-}
-</code></pre>
-
 <p>You can find a list of versions on <a href="https://github.com/orgs/refinedmods/packages">GitHub packages</a>.</p>
 
-<h3 class="h5" id="for-minecraft-1-15-or-later">For Minecraft 1.15 or later</h3>
+<h3 class="h5" id="creeperhost-maven">CreeperHost Maven</h3>
 
 <p>Add following repository to your <code>build.gradle</code>:</p>
 
 <pre><code>repositories {
     maven {
-        url &quot;https://repo.refinedmods.com&quot;
+        url = uri(&quot;https://maven.creeperhost.net&quot;)
     }
 }
 </code></pre>
 
-<p>Then use following dependency:</p>
+<p>You can find a list of versions on the <a href="https://maven.creeperhost.net/com/refinedmods/refinedstorage">Maven index</a>.</p>
 
-<pre><code>compileOnly fg.deobf(&quot;com.refinedmods:refinedstorage:VERSION_HERE&quot;)
-runtimeOnly fg.deobf(&quot;com.refinedmods:refinedstorage:VERSION_HERE&quot;)
+<p><strong>Warning:</strong> Due to a bug in the Maven index on CreeperHost, new versions aren&rsquo;t included in the index. However, you can use them in your Gradle dependency.</p>
+
+<p>For example, version <code>1.10.2</code> isn&rsquo;t included in the Maven index, but you can use <code>1.10.2</code> in your Gradle dependency when using CreeperHost Maven.</p>
+
+<h2 class="h4" id="for-older-minecraft-versions">For older Minecraft versions</h2>
+
+<p>Some Refined Storage API versions for older Minecraft versions are available on <a href="https://maven.creeperhost.net/com/refinedmods/refinedstorage">CreeperHost Maven</a>.</p>
+
+<p>However, not all of them are available. If you need a specific version, build Refined Storage yourself and include the API manually.</p>
+
+<h2 class="h4" id="including-the-api">Including the API</h2>
+
+<pre><code>implementation fg.deobf(&quot;com.refinedmods:refinedstorage:VERSION_HERE&quot;) {
+    transitive false
+}
 </code></pre>
-
-<p>You can find a list of versions on <a href="https://repo.refinedmods.com/com/refinedmods/">our Maven repository</a>.</p>
-
-<p>Warning: the Maven repository is being phased out and will be removed at some point.<br />
-When that happens, you&rsquo;ll have to build Refined Storage from source and include the jar manually.</p>
-
-<h3 class="h5" id="for-older-minecraft-versions">For older Minecraft versions</h3>
-
-<p>Due to disk space issues on our repository we have removed these old versions.</p>
-
-<p>You&rsquo;ll have to build Refined Storage from source and include the jar manually.</p>
 
 <h2 class="h4" id="using-the-api">Using the API</h2>
 
@@ -1444,6 +1437,10 @@ When that happens, you&rsquo;ll have to build Refined Storage from source and in
     public static IRSAPI RSAPI;
 }
 </code></pre>
+
+<h2 class="h4" id="javadoc">JavaDoc</h2>
+
+<p>Updated JavaDoc is available after every release <a href="https://refinedmods.com/refinedstorage/">here</a>.</p>
 
                 </article>
                 <a href="https://github.com/refinedmods/refinedmods.github.io/edit/main/refined-storage/wiki/Using%20the%20API.md" class="btn btn-light">
