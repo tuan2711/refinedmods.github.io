@@ -20,7 +20,7 @@ The Wireless Crafting Grid draws energy on following actions:
 
 |Action|Amount of Forge Energy drawed|
 |------|------|
-|Opening the Wireless Grid|30 FE|
+|Opening the Wireless Grid|10 FE|
 |Pulling an item from storage|3 FE|
 |Pushing an item to storage|3 FE|
 |Crafting an item|1 FE|
