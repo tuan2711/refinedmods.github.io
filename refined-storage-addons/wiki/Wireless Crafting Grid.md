@@ -4,7 +4,7 @@ To activate the Wireless Crafting Grid, the player has to right click the Wirele
 
 To use the Wireless Crafting Grid the item needs Forge Energy. You'll have to charge it in a block that charges items from another mod.
 
-After doing all these steps, the Wireless Crafting Grid is still missing a signal from the storage network. Add at least 1 [[Wireless Transmitter!Refined Storage]] to the network to get a basic range of 16 blocks.
+After doing all these steps, the Wireless Crafting Grid is still missing a signal from the storage network. Add at least 1 [[Wireless Transmitter!Refined Storage]] to the network to get a basic range of 100 blocks.
 
 If the Wireless Crafting Grid is ready for use, it will light up blue.
 
